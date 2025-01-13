@@ -18,20 +18,27 @@ This API server extracts reviews from any product page using browser automation 
 
 ## Setup
 
-1. **Clone the Repository:**
-
+1. Clone the repository:
    ```bash
-   git clone https://github.com/harshag121/go_marble_api.git
-   cd go_marble_api
+   git clone https://github.com/harshag121/hg_go_marble_api.git
+   cd hg_go_marble_api
+   ```
 
-2. ### For env setup and dependiencies for project
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+2. Set up a virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
-3. ### For installing Browser
-playwright install
+3. Install Playwright browsers:
+   ```bash
+   playwright install
+   ```
 
-4. Create a .env file and add this in that 
-
-OPENAI_API_KEY=your_openai_api_key_here
+4. Configure environment variables:
+   Create a `.env` file in the root directory and add the following line:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+   Replace `your_openai_api_key_here` with your actual OpenAI API key.
